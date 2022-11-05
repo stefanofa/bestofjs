@@ -3,6 +3,7 @@
 
 # Build
 build
+public/data/
 
 # Logs
 logs

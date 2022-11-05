@@ -7,8 +7,8 @@ export const APP_VERSION = process.env.VITE_APP_VERSION || "0.0.0";
 export const ISSUE_TRACKER_URL = `https://github.com/michaelrambeau/bestofjs`;
 
 // Root URLs of the static JSON files generated everyday
-export const FETCH_ALL_PROJECTS_URL = readEnvironmentVariable("JSON_API");
-export const FETCH_HALL_OF_FAME_URL = readEnvironmentVariable("JSON_API");
+export const FETCH_ALL_PROJECTS_URL = "/data";
+export const FETCH_HALL_OF_FAME_URL = "/data";
 
 // Serverless function end-points
 export const FETCH_README_URL = readEnvironmentVariable("DYNAMIC_API");
