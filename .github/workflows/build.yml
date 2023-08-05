@@ -27,6 +27,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
       - name: Install dependencies
-        run: cd apps/bestofjs-webui && pnpm install
+        run: pnpm install -F bestofjs-webui --no-hoist
       - name: Run Jest tests
-        run: cd apps/bestofjs-webui && pnpm run test:ci
+        run: pnpm -F bestofjs-webui run test:ci
