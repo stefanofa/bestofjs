@@ -1,4 +1,4 @@
-import withBundleAnalyzer from "@next/bundle-analyzer";
+// import withBundleAnalyzer from "@next/bundle-analyzer";
 
 import { env } from "./src/env.mjs";
 
@@ -41,8 +41,9 @@ function fetchLatestRankings() {
   return data;
 }
 
-const bundleAnalyzer = withBundleAnalyzer({
-  enabled: process.env.ANALYZE === "true",
-});
+// const bundleAnalyzer = withBundleAnalyzer({
+//   enabled: process.env.ANALYZE === "true",
+// });
 
-export default bundleAnalyzer(nextConfig);
+// export default bundleAnalyzer(nextConfig);
+export default nextConfig;
